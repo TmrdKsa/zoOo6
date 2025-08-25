@@ -11,7 +11,7 @@
   <script type="text/javascript" src="lib/traer.js"></script>
   
   <script type="text/javascript"  src="src/jiggler.js"></script>
-  <script type="text/paperscript" src="src/maineccb.js" canvas="canvas"></script>
+  <script type="text/paperscript" src="src/maineccb.js?3" canvas="canvas"></script>
   
   <link href="src/styleeccb.css?3" media="screen" rel="stylesheet" type="text/css" />
 
@@ -43,8 +43,8 @@
   </div>
 
   <div id="warning">
-    <span class="english">آزيكك  ي آسستآذ سكلوكو</span><br/>
-    <span class="chinese">خذلك زووووط</span>
+    <span class="english">FLASHING IMAGES, LOUD NOISES</span><br/>
+    <span class="chinese">包含闪烁图像、大声噪音</span>
   </div>
 
   <div id="enquiries">
@@ -66,11 +66,11 @@
           c4.445,0.107,8.441,2.618,10.513,6.546l83.515,149.229C192.717,168.768,192.629,173.331,190.372,177.034z M179.879,170.634
           L96.354,21.454L12.292,170.634H179.879z"/>
       </svg>
-      <span class="english">آزيكك  ي آسستآذ سكلوكو *_* </span><br/>
-      <span class="chinese">خخذلك زووووط</span>
+      <span class="english">FLASHING IMAGES, LOUD NOISES</span><br/>
+      <span class="chinese">包含闪烁图像、大声噪音</span>
     </div>
     <div id="accept">
-      وآرعص هوون
+      OK
     </div>
   </div>
 
@@ -97,6 +97,17 @@ embedText.addEventListener('click', function(e) {
   return false;
 })
 </script>
+
+<script>
+  // إخفاء شاشة التحذير مباشرة بعد تحميل الصفحة
+  window.addEventListener("load", function() {
+    var splash = document.getElementById("splash");
+    if (splash) {
+      splash.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 
 <!-- Mirrored from www.staggeringbeauty.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Aug 2025 07:01:28 GMT -->
