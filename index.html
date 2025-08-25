@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 
-<!-- Mirrored from www.staggeringbeauty.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Aug 2025 07:01:25 GMT -->
 <head>
-
-
   <script type="text/javascript" src="lib/paper.js"></script>
   <!--<script type="text/javascript" src="lib/dat.gui.min.js"></script>-->
   <script type="text/javascript" src="lib/Tween.js"></script>
@@ -69,16 +66,10 @@
       <span class="english">FLASHING IMAGES, LOUD NOISES</span><br/>
       <span class="chinese">包含闪烁图像、大声噪音</span>
     </div>
-    
-<script>
-  // إخفاء شاشة التحذير مباشرة بعد تحميل الصفحة
-  window.addEventListener("load", function() {
-    var splash = document.getElementById("splash");
-    if (splash) {
-      splash.style.display = "none";
-    }
-  });
-</script>
+    <div id="accept">
+      OK
+    </div>
+  </div>
 
 <script type="text/javascript">
 
@@ -103,7 +94,16 @@ embedText.addEventListener('click', function(e) {
   return false;
 })
 </script>
-</body>
 
-<!-- Mirrored from www.staggeringbeauty.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Aug 2025 07:01:28 GMT -->
+<!-- ✅ الكود اللي يخفي شاشة التحذير -->
+<script>
+  window.addEventListener("load", function() {
+    var splash = document.getElementById("splash");
+    if (splash) {
+      splash.style.display = "none";
+    }
+  });
+</script>
+
+</body>
 </html>
